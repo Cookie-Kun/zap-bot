@@ -1,5 +1,5 @@
 -- Boas vindas e apresentar o cardápio
 -- Vendas
 -- Resumo
--- edereço de entrega
--- ecerramento 
+-- endereço de entrega
+-- encerramento 

@@ -1,15 +1,29 @@
 const banco = require('../banco');
 
-function execute(user, msg){
-    let resumo = " RESUMO ";
-    let total = 0;
+function execute(user, msg) { 
+    if(msg === "*") {
+        banco.db[user].stage = 0;
+        return ["Pedido cancelado com sucesso"];
+    }
 
-    banco.db[user].itens.forEach((value)=>{
+    if(msg === "#") {
+        banco.db[user].stage = 3;
+        return ["Digite o endereço por favor"];
+    }
+
+    let resumo = " RESUMO DO PEDIDO \n";
+    let total = 0;
+    banco.db[user].itens.forEach((value) => {
         console.log(value);
+        resumo += `${value.descricao} -------------------- ${value.preco} \n`;
+
         total += value.preco;
     });
 
-    return [`Total é R$ ${total}`]; 
+    resumo += "--------------------\n";
+    resumo += ` Total R$ ${total}`;
+
+    return ["Para confirmar digite # ou para cancelar digite * ", resumo,]; 
 }
 
 exports.execute = execute;

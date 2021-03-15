@@ -5,12 +5,13 @@ function execute (user, msg){
 
     if(msg === "*"){
         banco.db[user].stage = 0;
+        banco.db[user].itens = [];
         return ["Pedido cancelado com sucesso"];
     }
 
     if(msg === "#"){
         banco.db[user].stage = 2;
-        return ["Estamos fechando seu pedido", "Ok?"];
+        return ["Ok?", "Estamos fechando seu pedido",];
     }
 
     if(!cardapio.menu[msg]){
