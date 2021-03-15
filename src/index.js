@@ -15,7 +15,7 @@ venom
 function start(client) {
   client.onMessage((message) => {
     console.log(message);
-    let resp = stages.step[getStage(message.from)].obj.execute();
+    let resp = stages.step[getStage(message.from)].obj.execute(message.from, message.body);
     for( let index = 0; index < resp.length; index++){
       const element = resp[index];
       client
