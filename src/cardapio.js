@@ -4,7 +4,7 @@ const cardapio = {
         preco: 9.9,
     },
     2: {
-        descricao: "Passaporte",
+        descricao: "Pastel",
         preco: 10.0,
     },
     3: {

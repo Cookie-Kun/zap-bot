@@ -6,7 +6,7 @@ function execute (){
         let element = cardapio.menu[value];
         menu += `${value} - ${element.descricao}      R$ ${element.preco} \n`
     });
-    return [menu, "Oi, sou a Sueli. Estou com uma rifa nova"]
+    return [menu, "Oi, sou a assistente da Sueli. Estou com um cardapio delicioso para voce"]
 }
 
 exports.execute = execute;

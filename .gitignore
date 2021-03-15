@@ -41,6 +41,12 @@ build/Release
 node_modules/
 jspm_packages/
 
+# Session/Token
+token/
+tokens/
+session/
+sessions/
+
 # TypeScript v1 declaration files
 typings/
 
