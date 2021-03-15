@@ -1,0 +1,23 @@
+{
+  "name": "zap-bot",
+  "version": "1.0.0",
+  "description": "Aprendendo a programar um BOT no Whatsapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cookie-Kun/zap-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cookie-Kun/zap-bot/issues"
+  },
+  "homepage": "https://github.com/Cookie-Kun/zap-bot#readme",
+  "dependencies": {
+    "venom-bot": "^3.0.9"
+  }
+}
